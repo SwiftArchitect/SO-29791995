@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7XT-oc-4Ya">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ScrollView-->
+        <scene sceneID="g12-bd-gBM">
+            <objects>
+                <viewController id="7XT-oc-4Ya" customClass="ViewController" customModule="SO_29791995" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eem-Gh-258"/>
+                        <viewControllerLayoutGuide type="bottom" id="2G3-fH-VUd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pAa-cz-Ae3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BO-0W-GaM">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IS-0W-8cN">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="96"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6IS-0W-8cN" firstAttribute="trailing" secondItem="9BO-0W-GaM" secondAttribute="trailing" id="2Mb-7W-r2R"/>
+                                    <constraint firstItem="6IS-0W-8cN" firstAttribute="width" secondItem="9BO-0W-GaM" secondAttribute="width" id="GMp-Ky-SM6"/>
+                                    <constraint firstItem="6IS-0W-8cN" firstAttribute="height" secondItem="9BO-0W-GaM" secondAttribute="height" id="X3q-WO-wv6"/>
+                                    <constraint firstItem="6IS-0W-8cN" firstAttribute="leading" secondItem="9BO-0W-GaM" secondAttribute="leading" id="XWg-i9-JM4"/>
+                                    <constraint firstItem="6IS-0W-8cN" firstAttribute="top" secondItem="9BO-0W-GaM" secondAttribute="top" id="sD9-KX-BUZ"/>
+                                    <constraint firstItem="6IS-0W-8cN" firstAttribute="bottom" secondItem="9BO-0W-GaM" secondAttribute="bottom" id="z6w-yv-g34"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="En1-ro-6iJ">
+                                <rect key="frame" x="136" y="506" width="49.5" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.41327638644149356" green="0.5" blue="0.4006196116403502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69718104599999997" green="0.87363749739999996" blue="0.7208217978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9BO-0W-GaM" firstAttribute="trailing" secondItem="pAa-cz-Ae3" secondAttribute="trailing" id="4rb-TY-7tw"/>
+                            <constraint firstItem="2G3-fH-VUd" firstAttribute="top" secondItem="En1-ro-6iJ" secondAttribute="bottom" constant="20" id="7Et-LR-IsY"/>
+                            <constraint firstItem="En1-ro-6iJ" firstAttribute="centerX" secondItem="pAa-cz-Ae3" secondAttribute="centerX" id="LUM-BL-Hbx"/>
+                            <constraint firstItem="9BO-0W-GaM" firstAttribute="leading" secondItem="pAa-cz-Ae3" secondAttribute="leading" id="R7k-ih-Xbb"/>
+                            <constraint firstItem="9BO-0W-GaM" firstAttribute="bottom" secondItem="2G3-fH-VUd" secondAttribute="top" id="ip6-Hg-fUL"/>
+                            <constraint firstItem="9BO-0W-GaM" firstAttribute="top" secondItem="eem-Gh-258" secondAttribute="bottom" id="pul-uL-7ry"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ScrollView" image="second" id="Fvf-zJ-zMK"/>
+                    <connections>
+                        <outlet property="osLabel" destination="En1-ro-6iJ" id="l47-Y2-nCM"/>
+                        <outlet property="scrollView" destination="9BO-0W-GaM" id="r1x-Ox-nci"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SdS-do-tXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.25" y="260.91549295774649"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
