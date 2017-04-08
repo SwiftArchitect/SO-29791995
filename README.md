@@ -3,6 +3,7 @@
 ![iOS 10.2](https://i.stack.imgur.com/xjfgE.gif)
 
 [↻ replay animation](https://i.stack.imgur.com/xjfgE.gif)
+
 ---
 
 ### Stack Overflow Question 29791995
