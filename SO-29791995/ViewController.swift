@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  SO-29791995
 //
-//  Copyright © 2017 Xavier Schott
+//  Copyright © 2017, 2018 Xavier Schott
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
 //  in the Software without restriction, including without limitation the rights
@@ -38,15 +38,15 @@ class ViewController: UIViewController {
         refreshControl.attributedTitle =
             NSAttributedString(string: "Pull for White Flash",
                                attributes: [
-                                NSForegroundColorAttributeName: UIColor.white,
-                                NSFontAttributeName: UIFont(name: "HelveticaNeue-UltraLight",
+                                NSAttributedStringKey.foregroundColor: UIColor.white,
+                                NSAttributedStringKey.font: UIFont(name: "HelveticaNeue-UltraLight",
                                                             size: 36.0)! ])
 
         osLabel.text = "iOS \(UIDevice.current.systemVersion)"
     }
 
     // Pull to refresh flash animation
-    func doRefresh(_ sender: UIRefreshControl) {
+    @objc func doRefresh(_ sender: UIRefreshControl) {
         sender.endRefreshing()
         UIView.animate(withDuration: 0.1, animations: {
             self.view.tintColor = self.view.backgroundColor // store color
